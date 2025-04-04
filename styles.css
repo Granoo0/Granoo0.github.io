@@ -115,8 +115,9 @@ section {
 .theme-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
-    z-index: 1000;
+    right: 70px; /* Adjusted to make space for hamburger */
+    z-index: 1001; /* Higher than header */
+    transition: var(--transition);
 }
 
 .theme-toggle button {
@@ -138,16 +139,70 @@ section {
     transform: rotate(30deg);
 }
 
+.theme-toggle button::after,
+.hamburger::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: var(--transition);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.theme-toggle button:hover::after,
+.hamburger:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        right: 2rem;
+        top: 5px;
+    }
+    
+    .theme-toggle button {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+        position: relative;
+        right: 2rem;
+        top: 18px;
+    }
+}
+
 /* Header & Navigation */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     background-color: var(--bg-secondary);
     box-shadow: var(--shadow);
     transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 15px; /* Add some side padding */
+    }
+    
+    .nav {
+        padding: 15px 0; /* Reduce nav padding on mobile */
+    }
+    
+    .hamburger {
+        right: 15px; /* Position hamburger more precisely */
+        z-index: 1002; /* Above both header and theme toggle */
+    }
 }
 
 .nav {
@@ -195,6 +250,10 @@ section {
 
 .nav-link.active {
     color: var(--primary-color);
+}
+
+.nav-links.active ~ .theme-toggle {
+    right: calc(100% - 100px); /* Moves toggle when menu opens */
 }
 
 .hamburger {

@@ -457,3 +457,21 @@ if (imageWrapper) {
         imageWrapper.style.transform = 'rotateY(0deg) rotateX(0deg)';
     });
 }
+
+function adjustTogglePosition() {
+    const themeToggle = document.querySelector('.theme-toggle');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (window.innerWidth <= 768) {
+        // Mobile layout
+        const hamburgerRect = hamburger.getBoundingClientRect();
+        themeToggle.style.right = `${hamburgerRect.width + 20}px`;
+    } else {
+        // Desktop layout
+        themeToggle.style.right = '20px';
+    }
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustTogglePosition);
+window.addEventListener('resize', adjustTogglePosition);
