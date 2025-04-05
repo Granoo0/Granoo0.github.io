@@ -255,6 +255,36 @@ document.addEventListener('DOMContentLoaded', function() {
             role: "Design Director, Creative Minds",
             text: "Granoo's UI designs transformed our dashboard interface. His user-centric approach resulted in a 40% increase in user engagement across our platform.",
             image: "assets/testimonial3.jpg"
+        },
+        {
+            name: "James Carter",  
+            role: "Product Manager, TechNova Solutions",  
+            text: "Granoo's UX strategy revolutionized our mobile app. His attention to detail and seamless navigation flow led to a 30% boost in user retention within just three months.",  
+            image: "assets/testimonial2.jpg"  
+        },
+        {
+            name: "Sophia Lee",  
+            role: "CEO, Bloom Digital",  
+            text: "Working with Granoo was a game-changer. His intuitive design system streamlined our workflow and reduced customer support queries by 50%. Highly recommend his expertise!",  
+            image: "assets/testimonial1.jpg"  
+        },
+        {
+            name: "Michael Thompson",  
+            role: "Head of Development, AlphaCore",  
+            text: "Granoo’s UI/UX work on our SaaS platform was exceptional. His designs improved onboarding completion rates by 65%, making a huge impact on our business growth.",  
+            image: "assets/testimonial2.jpg"  
+        },
+        {
+            name: "Aisha Patel",  
+            role: "Marketing Director, Visionary Labs",  
+            text: "Granoo’s creative direction elevated our brand’s digital presence. His designs not only look stunning but also increased conversion rates by 35%. A true professional!",  
+            image: "assets/testimonial3.jpg"  
+        },
+        {
+            name: "Daniel Kim",  
+            role: "Founder, NexGen Apps",  
+            text: "Granoo’s ability to blend aesthetics with functionality is unmatched. His redesign of our app interface led to a 4.8-star rating on the App Store—our highest ever!",  
+            image: "assets/testimonial2.jpg"  
         }
     ];
     
