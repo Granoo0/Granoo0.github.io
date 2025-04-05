@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateThemeIcon(theme) {
         const icon = themeToggle.querySelector('i');
         icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        themeToggle.setAttribute('aria-label', theme === 'light' ? 'Toggle dark mode' : 'Toggle light mode');
     }
     
     // Mobile Navigation
@@ -240,19 +241,19 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: "Sarah Johnson",
             role: "CEO, TechStart Inc.",
-            text: "John's work on our e-commerce platform was exceptional. He delivered ahead of schedule and implemented features that significantly improved our conversion rates.",
+            text: "Granoo's work on our e-commerce platform was exceptional. He delivered ahead of schedule and implemented features that significantly improved our conversion rates.",
             image: "assets/testimonial1.jpg"
         },
         {
             name: "Michael Chen",
             role: "Product Manager, Digital Solutions",
-            text: "Working with John was a pleasure. His attention to detail and problem-solving skills helped us overcome several technical challenges in our mobile app development.",
+            text: "Working with Granoo was a pleasure. His attention to detail and problem-solving skills helped us overcome several technical challenges in our mobile app development.",
             image: "assets/testimonial2.jpg"
         },
         {
             name: "Emily Rodriguez",
             role: "Design Director, Creative Minds",
-            text: "John's UI designs transformed our dashboard interface. His user-centric approach resulted in a 40% increase in user engagement across our platform.",
+            text: "Granoo's UI designs transformed our dashboard interface. His user-centric approach resulted in a 40% increase in user engagement across our platform.",
             image: "assets/testimonial3.jpg"
         }
     ];
