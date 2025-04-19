@@ -39,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Set initial theme based on system preference (optional)
+    // Uncomment the following lines if you want to set the initial theme based on system preference
+    
+    // const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // const initialTheme = systemPrefersDark ? 'dark' : 'light';
+    // localStorage.setItem('theme', initialTheme);
+    
     // Active link highlighting on scroll
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-link');
