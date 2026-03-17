@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Granit Trolli – Frontend Developer Portfolio" />
+  <title>Granit Trolli | Frontend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="navbar" role="banner">
+    <nav class="nav-inner container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        GT<span class="logo-dot">.</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-sun" id="iconLight" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" id="iconDark" aria-hidden="true"></i>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-greeting reveal">👋 Hello, I'm</p>
+        <h1 class="hero-name reveal reveal-delay-1">
+          Granit Trolli<span class="accent-dot">.</span>
+        </h1>
+        <p class="hero-tagline reveal reveal-delay-2">
+          I'm a <span class="typing-text" id="typingText"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-sub reveal reveal-delay-3">
+          I craft clean, performant, and delightful digital experiences.<br />
+          Let's build something remarkable together.
+        </p>
+        <div class="hero-cta reveal reveal-delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-label="About me">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <p>
+            I'm a <strong>Frontend Developer</strong> based in Taufkirchen, Germany.
+            My journey into coding has been mostly self-taught, driven by curiosity and a lot of hands-on practice.
+            I've spent my time building projects that focus on making the web more accessible and easier to navigate
+            for everyone.
+          </p>
+          <p>
+            I'm still early in my career, but I've already learned that the best code isn't just about syntax—it's
+            about understanding the person on the other side of the screen.
+            I'm always looking for ways to improve my skills and build things that actually matter.
+          </p>
+          <ul class="about-facts" role="list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              Taufkirchen, Germany
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              Available for freelance &amp; full-time
+            </li>
+          </ul>
+          <a href="https://granitt.my.canva.site/cv" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+            aria-label="View CV">
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i> View CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What I Do</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-1" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-1" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-js" aria-hidden="true"></i></div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-2" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-react" aria-hidden="true"></i></div>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-2" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-vuejs" aria-hidden="true"></i></div>
+            <span class="skill-name">Vue.js</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-3" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt" aria-hidden="true"></i></div>
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-4" tabindex="0">
+            <div class="skill-icon"><i class="fa-brands fa-figma" aria-hidden="true"></i></div>
+            <span class="skill-name">Figma</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-5" tabindex="0">
+            <div class="skill-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-card reveal reveal-delay-6" tabindex="0">
+            <div class="skill-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+            <span class="skill-name">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal" tabindex="0">
+            <div class="project-img project-img--1" aria-hidden="true">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Mini Game with Vue.js and Bootstrap</h3>
+              <p class="project-desc">
+                An interactive 'Slay the Monster' game featuring health tracking and special attacks.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Granoo0/VueJS-slay-monster-game" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-ghost" aria-label="GitHub repo for Analytics Dashboard">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal-delay-1" tabindex="0">
+            <div class="project-img project-img--2" aria-hidden="true">
+              <img src="img/Lernen.png" alt="German Learning Platform Preview"
+                style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">German Learning Platform</h3>
+              <p class="project-desc">
+                A platform designed to help users master German through interactive lessons and progress tracking.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Claude AI</span>
+                <span class="tag">React.js</span>
+                <span class="tag">Vite</span>
+                <span class="tag">SupaBase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://chimerical-faloodeh-d23206.netlify.app" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary" aria-label="Live demo of German Learning Platform">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                </a>
+                <a href="https://github.com/Granoo0/Learn-german-app" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-ghost" aria-label="GitHub repo for German Learning Platform">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal reveal-delay-2" tabindex="0">
+            <div class="project-img project-img--3" aria-hidden="true">
+              <img src="img/notes-app.png" alt="Notes App Preview"
+                style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Notes App</h3>
+              <p class="project-desc">
+                A personal organization tool with user authentication and persistent data storage.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Claude AI</span>
+                <span class="tag">React.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">SupaBase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Granoo0/Notes-App" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-ghost" aria-label="GitHub repo for Notes App">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal reveal-delay-3" tabindex="0">
+            <div class="project-img project-img--4" aria-hidden="true">
+              <img src="img/weather-app.png" alt="Weather App Preview"
+                style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-desc">
+                A real-time dashboard that displays local weather data and multi-day forecasts.
+              </p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Weather API</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Granoo0/Weather-app" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-ghost" aria-label="GitHub repo for Weather App">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-intro">
+              Have a project in mind, a question, or just want to say hi?
+              My inbox is always open. I'll do my best to get back to you
+              within 24 hours. ✌️
+            </p>
+            <ul class="social-links" role="list" aria-label="Social media and contact links">
+              <li>
+                <a href="https://github.com/Granoo0" target="_blank" rel="noopener noreferrer" class="social-link"
+                  aria-label="GitHub profile">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/granit-trolli/" target="_blank" rel="noopener noreferrer"
+                  class="social-link" aria-label="LinkedIn profile">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:gtrolli.gt@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                  aria-label="Send email">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <span>gtrolli.gt@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate aria-label="Contact form"
+            action="https://formsubmit.co/gtrolli.gt@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Portfolio Message!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="Name" autocomplete="name" required
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="Email" autocomplete="email" required
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..." required
+                aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="currentYear"></span> Granit Trolli. Crafted with
+        <i class="fa-solid fa-heart" aria-label="love"></i> &amp; lots of ☕
+      </p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
